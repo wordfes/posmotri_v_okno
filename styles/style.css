@@ -9,9 +9,12 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', 'Arial', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -53,12 +56,6 @@ button {
   white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: flex;
   justify-content: center;
@@ -98,9 +95,7 @@ button {
   inline-size: 225px;
   block-size: 27px;
   border-top: 1px solid #FFF;
-  border-right: 1px solid transparent;
   border-bottom: 1px solid #FFF;
-  border-left: 1px solid transparent;
   color: rgba(255, 255, 255, 0.70);
   font-family: inherit;
   font-weight: 400;
@@ -132,7 +127,7 @@ button {
   cursor: pointer;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -268,7 +263,7 @@ button {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
